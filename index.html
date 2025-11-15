@@ -1,77 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tribute Page</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="form-container">
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Please fill out the form below to help us improve our services.</p>
+  <main id="main">
+    <h1 id="title">Ada Lovelace</h1>
 
-        <form id="survey-form">
-            
-            <div class="form-group">
-                <label id="name-label" for="name">Your Name:</label>
-                <input type="text" id="name" placeholder="Enter your name" required>
-            </div>
-
-            
-            <div class="form-group">
-                <label id="email-label" for="email">Your Email:</label>
-                <input type="email" id="email" placeholder="Enter your email" required>
-            </div>
-
-            
-            <div class="form-group">
-                <label id="number-label" for="number">Your Age:</label>
-                <input type="number" id="number" min="18" max="120" placeholder="Enter your age" required>
-            </div>
-
-           
-            <div class="form-group">
-                <label for="dropdown">Which service did you use?</label>
-                <select id="dropdown" required>
-                    <option value="service1">Service 1</option>
-                    <option value="service2">Service 2</option>
-                </select>
-            </div>
-
-            
-            <div class="form-group">
-                <label>How satisfied are you with our service?</label><br>
-                <input type="radio" id="satisfaction1" name="satisfaction" value="very-satisfied" required>
-                <label for="satisfaction1">Very Satisfied</label><br>
-                <input type="radio" id="satisfaction2" name="satisfaction" value="satisfied">
-                <label for="satisfaction2">Satisfied</label><br>
-                <input type="radio" id="satisfaction3" name="satisfaction" value="neutral">
-                <label for="satisfaction3">Neutral</label>
-            </div>
-
-            
-            <div class="form-group">
-                <label>Which features did you use?</label><br>
-                <input type="checkbox" id="feature1" value="feature1">
-                <label for="feature1">Feature 1</label><br>
-                <input type="checkbox" id="feature2" value="feature2">
-                <label for="feature2">Feature 2</label><br>
-                <input type="checkbox" id="feature3" value="feature3">
-                <label for="feature3">Feature 3</label>
-            </div>
-
-            
-            <div class="form-group">
-                <label for="comments">Additional Comments:</label>
-                <textarea id="comments" placeholder="Enter your comments here" rows="4" required></textarea>
-            </div>
-
-            
-            <div class="form-group">
-                <button type="submit" id="submit">Submit</button>
-            </div>
-        </form>
+    <div id="img-div">
+      <img
+        id="image"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Ada_Lovelace_portrait.jpg"
+        alt="Portrait of Ada Lovelace"
+      />
+      <figcaption id="img-caption">
+        Ada Lovelace, widely regarded as the first computer programmer.
+      </figcaption>
     </div>
+
+    <section id="tribute-info">
+      <h2>About Ada Lovelace</h2>
+      <p>
+        Ada Lovelace (1815–1852) was an English mathematician best known for her
+        work with Charles Babbage on the Analytical Engine, an early
+        mechanical general-purpose computer design. She is credited with writing
+        the first algorithm intended to be carried out by a machine, making her
+        the world's first computer programmer.
+      </p>
+
+      <p>
+        Her visionary understanding of computing stretched far beyond simple
+        calculation. She imagined machines capable of composing music, producing
+        graphics, and assisting in scientific research—ideas that foreshadowed
+        modern computing.
+      </p>
+
+      <p>
+        Despite facing societal barriers as a woman in science, her contributions
+        laid foundational concepts for the digital age.
+      </p>
+    </section>
+
+    <p>
+      Learn more about her life and work at
+      <a
+        id="tribute-link"
+        href="https://en.wikipedia.org/wiki/Ada_Lovelace"
+        target="_blank"
+      >
+        this external biography
+      </a>.
+    </p>
+  </main>
 </body>
 </html>
